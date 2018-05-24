@@ -12,6 +12,12 @@ public class School {
 		for(int q=0;q<5;q++){
 			System.out.println( ( q + 1 ) + " 점수를 입력하시오: ");
 		   
+			int rank[] new int[];
+			
+			
+		
+			
+		
 		  
 			
 		}
