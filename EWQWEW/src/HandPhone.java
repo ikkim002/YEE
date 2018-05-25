@@ -11,29 +11,36 @@ public class HandPhone {
 	String sea = ""; 
 	
 		System.out.println("연락처 출력 ");
-		friendname=scan.next();
+		=scan.next();
 		System.out.println("연락처 출력 ");
-		age=scan.next();
+		=scan.next();
 		System.out.println("연락처 출력 ");
-		phone=scan.next();
+		=scan.next();
 		
 		switch(sea) {
 		
 		case "1":
-			
+		
+			System.out.println("");
 			
 			break;
 			
 		case "2":
 			
-			
+			System.out.println();
 			break;
 	
 		case "3":
+			System.out.println();
 			
 			break;
 		
 		default:
+		
 			System.out.println("");
+	
+		
+		
+		}
 	}
 }
