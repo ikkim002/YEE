@@ -9,7 +9,6 @@ public class sasa extends JApplet{
 	JButton a4 = new JButton ("³¡");
 	public sasa() 
 	{
-		super("¤±");
 		
 		
 		this.setLayout(new FlowLayout());
