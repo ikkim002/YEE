@@ -1,11 +1,14 @@
+import java.awt.*;
 
-//http://nakzzi.xyz/ < 고웁
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JTable;
 import javax.swing.JTextField;
 
+
+import javax.swing.*;
 
 public class roto  {
 		static class MyGUI extends JFrame {
@@ -14,12 +17,18 @@ public class roto  {
 			setTitle("성적 관리프로그램");
 			this.setLayout(null);
 			
+			String dat[][]= { { "10"},
+					{ "10"},
+					{"10"},
+					{"10"},
+					{"10"},
+					{"10"}};		}
 			
 			JTextField h = new JTextField("");
 			h.setBounds(120,10,100,50);
 			
-			JButton a = new JButton("이름");
-			a.setBounds(10,10,100,50);
+			//JTable sd = new JTable();
+			//JScrollPane asd = new JScrollPane(table);
 			
 			JTextField g = new JTextField("");
 			g.setBounds(120,70,100,50);
@@ -71,19 +80,6 @@ public class roto  {
 			
 			
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
 			add(qq);
 			add(dd);
 			add(qr);
@@ -96,7 +92,6 @@ public class roto  {
 			add(w);
 			add(e);
 			add(h);
-			add(a);
 			add(b);
 			add(c);
 			add(i);
