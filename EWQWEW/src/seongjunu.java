@@ -2,11 +2,17 @@ import java.awt.*;
 import javax.swing.*;
 import javax.swing.border.BevelBorder;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.text.TextAction;
+
+import javafx.scene.text.Text;
+
 import java.awt.event.*;
 
 public class seongjunu {
 
 	static class you extends JFrame {
+		protected static final String JButton = null;
+
 		you () {
 			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setTitle("성적 관리 프로그램");
@@ -26,21 +32,24 @@ public class seongjunu {
 		a1.setBounds(210,10,100,50);
 		b1.setBounds(110,10,100,50);
 	a1.addActionListener(new ActionListener() {
-
+		
 		@Override
-		public void actionPerformed(ActionEvent arg0) {
+		public void actionPerformed(ActionEvent e) {
 			// TODO Auto-generated method stub
-			a1.setBackground(Color.yellow);
-				
+			
+			String [] a = new String[4]; 
+			
+			
+					
 		}
-	
-		});
+	});
 	
 		JButton a2 = new JButton("제거");
 		JTextField b2 = new JTextField(10);
 		a2.setBounds(210,61,100,50);
 		b2.setBounds(110,61,100,50);
-			
+		
+		
 		JButton a3 = new JButton("수정");
 		JTextField b3 = new JTextField(10);
 		a3.setBounds(210,112,100,50);
