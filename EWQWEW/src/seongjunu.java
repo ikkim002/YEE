@@ -4,6 +4,8 @@ import javax.swing.border.BevelBorder;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.text.TextAction;
 
+import com.sun.xml.internal.txw2.TxwException;
+
 import javafx.scene.text.Text;
 
 import java.awt.event.*;
@@ -39,6 +41,7 @@ public class seongjunu {
 			
 			String [] a = new String[4]; 
 			
+			//추가 는 string 으로  제거는 if  else 로 
 			
 					
 		}
