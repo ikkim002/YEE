@@ -29,7 +29,6 @@ public class roto  {
 			
 			JPanel g3 = new JPanel();
 		
-			DefaultTableModel
 			JButton a = new JButton("¿Ã∏ß");
 			a.setBounds(10,10,100,50);
 			
