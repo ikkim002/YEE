@@ -7,7 +7,7 @@ public class GUI32 {
 
 	public GUI32(String a, String b, String c) {
 		super();
-		this.a = a;
+		this.name= a;
 		this.b = b;
 		this.c = c;
 	}

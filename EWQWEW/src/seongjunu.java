@@ -4,6 +4,7 @@ import javax.swing.border.BevelBorder;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.text.TextAction;
 
+import com.mysql.cj.x.protobuf.MysqlxCrud.Insert;
 import com.sun.xml.internal.txw2.TxwException;
 
 import javafx.scene.text.Text;
@@ -39,9 +40,14 @@ public class seongjunu {
 		public void actionPerformed(ActionEvent e) {
 			// TODO Auto-generated method stub
 			
-			String [] a = new String[4]; 
+			//String [] a = new String[4];
 			
-			//추가 는 string 으로  제거는 if  else 로 
+			String a1 = b1.getName();
+			String a2 = b1.getText();
+			String a3 = b1.getText();
+			//추가 는 string 으로  제거는 if  else 로	
+			
+			
 			
 					
 		}

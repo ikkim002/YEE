@@ -23,7 +23,7 @@ public class DTO {
 		return con;
 	} // getConn : 연결 메소드 작성
 
-	public int insertScore(ScoreDTO dto) {
+	public int insertScore(dot dto) {
 		Connection con = null;
 		PreparedStatement ps = null;
 		int result = 0;
@@ -58,7 +58,7 @@ public class DTO {
 		} // try - catch - finally
 		return result;
 	} // insertMember : 회원 정보를 저장하는 메소드, 성공 여부를 int형 result 를
-					// 반환한다.
+		// 반환한다.
 
 	public Vector getScore() {
 		Vector data = new Vector();
@@ -115,7 +115,7 @@ public class DTO {
 		return data;
 	} // getScore : 리스트를 가져오는 메서드, 조회해온 데이터를 Vector형 data를 반환한다.
 
-	public int updateScore(ScoreDTO dto) {
+	public int updateScore(dot dto) {
 		Connection con = null;
 		PreparedStatement ps = null;
 		int result = 0;
@@ -152,37 +152,5 @@ public class DTO {
 		return result;
 	} // updateScore : 한 레코드를 수정하는 메서드, 성공 여부를 int형 result 를 반환한다.
 
-	public int deleteScore(ScoreDTO dto) {
-		Connection con = null;
-		PreparedStatement ps = null;
-		int result = 0;
-		try {
-			con = getConn();
-			String sql = "delete from score where name=?";
-			ps = con.prepareStatement(sql);
-			ps.setString(1, dto.getName());
-			result = ps.executeUpdate();
-		} catch (Exception e) {
-			e.printStackTrace();
-		} finally {
-			if (ps != null) {
-				try {
-					ps.close();
-				} catch (SQLException e2) {
-					e2.printStackTrace();
-				} // ps try - catch
-			} // ps if
-			if (con != null) {
-				try {
-					con.close();
-				} catch (SQLException e2) {
-					e2.printStackTrace();
-				} // con try - catch
-			} // con if
-		} // try - catch - finally
-		return result;
-	} // deleteScore : 한 레코드를 삭제하는 메서드, 성공 여부를 int형 result 를 반환한다.
-
+}	
 	// ScoreDAO : Databse 처리
-
-}
