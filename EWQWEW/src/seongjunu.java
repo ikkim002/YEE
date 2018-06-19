@@ -13,8 +13,8 @@ import java.awt.event.*;
 import java.util.Vector;
 
 public class seongjunu {
-	DTO DTO;
-	dot dot;
+	ScoreDAO ScoreDAO;
+	ScoreDTO ScoreDTO;
 	static class you extends JFrame {
 		String url = "jdbc:mysql://localhost/ji";
 		protected static final String JButton = null;

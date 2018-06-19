@@ -1,6 +1,5 @@
 
-public class dot {
-
+public class ScoreDTO {
 	private String name;
 	private int kor, eng, mat, tot, ave;
 
