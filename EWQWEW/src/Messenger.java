@@ -10,6 +10,7 @@ import javax.swing.*;
 public class Messenger {
 	Messenger2 Messenger2;
 	
+	
 	protected JTextField textField;
 	protected JTextArea textArea;
 	DatagramSocket socket;
