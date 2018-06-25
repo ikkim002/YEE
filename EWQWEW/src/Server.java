@@ -13,7 +13,8 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 public class Server extends JFrame {
-
+	
+	
 	JTextArea ta;
 	JTextField tf;
 
@@ -33,7 +34,6 @@ public class Server extends JFrame {
 		setVisible(true);
 
 	}
-
 }
 
 class GuiMultiChat_Tcpserver {
@@ -55,7 +55,7 @@ class GuiMultiChat_Tcpserver {
 		Socket socket = null;
 
 		try {
-			serverSocket = new ServerSocket(7777);
+			serverSocket = new ServerSocket(1000);
 			System.out.println("서버 시작");
 
 			while (true) {
@@ -73,14 +73,14 @@ class GuiMultiChat_Tcpserver {
 		}
 	}
 
-	void sendToAll(String msg) {
-
+	void sendToAll(String nick) {
+		
 		Iterator it = clients.keySet().iterator();
 
 		while (it.hasNext()) {
 			try {
 				DataOutputStream out = (DataOutputStream) clients.get(it.next());
-				out.writeUTF(msg);
+				out.writeUTF(nick);
 			} catch (IOException e) {
 				System.out.println("sendToall 입출력 에러");
 			}

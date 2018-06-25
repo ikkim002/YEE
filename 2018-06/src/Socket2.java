@@ -16,8 +16,6 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 public class Socket2 {
-	
-	
 
 	static String nick = null;
 
@@ -30,7 +28,7 @@ public class Socket2 {
 		nick = JOptionPane.showInputDialog("당신의 대화명");
 		FrClient f = new FrClient(nick);
 		Socket socket;
-		
+
 		try {
 			String serverIp = "127.0.0.1";
 
@@ -73,7 +71,7 @@ public class Socket2 {
 					out.writeUTF(name);
 				}
 				while (out != null) {
-			
+
 					out.writeUTF("[" + name + "]" + ss.nextLine());
 				}
 			} catch (IOException e) {
@@ -128,7 +126,7 @@ public class Socket2 {
 
 			panel.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
 			JLabel label_name = new JLabel(nick + "님");
-			panel.add(label_name,BorderLayout.WEST);
+			panel.add(label_name, BorderLayout.WEST);
 			panel.add(tf, BorderLayout.CENTER);
 
 			add(label, BorderLayout.NORTH);
