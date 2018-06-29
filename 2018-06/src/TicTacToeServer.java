@@ -47,9 +47,9 @@ class Game {
 	
 	public void printBoard() {
 		for (int k = 0; k < 5 ; k++) {
-			System.out.println(" "+ boards[k][0] + "¦¢ " + boards[k][1] + "¦¢ " + boards[k][2]);
+			System.out.println(" "+ boards[k][0] + "¦¢ " + boards[k][1] + "¦¢ " + boards[k][2]+ boards[k][3] + "¦¢ " + boards[k][4] );
 			if(k != 2)
-				System.out.println("---¦¢---¦¢---");
+				System.out.println("---¦¢---¦¢---¦¢---¦¢---");
 		}
 	}
 }
