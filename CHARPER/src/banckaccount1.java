@@ -11,10 +11,8 @@ public class banckaccount1 {
 		this.balance = balance;
 		this.rate = rate;
 	}
-	00.
-	
-	}
 	
 	
 	}
-}
+	
+	

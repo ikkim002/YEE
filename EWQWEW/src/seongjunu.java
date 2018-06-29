@@ -4,11 +4,6 @@ import javax.swing.border.BevelBorder;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.text.TextAction;
 import java.sql.*;
-import com.mysql.cj.x.protobuf.MysqlxCrud.Insert;
-import com.sun.xml.internal.txw2.TxwException;
-
-import javafx.scene.text.Text;
-
 import java.awt.event.*;
 import java.util.Vector;
 
@@ -114,11 +109,7 @@ public class seongjunu {
 			setVisible(true);
 		}
 
-		private Connection makeConnection() {
-			// TODO Auto-generated method stub
-			return null;
 		}
-	}
 
 	public static void main(String[] args) throws SQLException{
 		new you();

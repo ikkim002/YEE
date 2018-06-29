@@ -1,6 +1,7 @@
 import java.awt.event.*;
 import java.awt.*;
 import java.io.*;
+import java.net.Socket;
 
 import javax.swing.JFrame;
 import javax.swing.JTextArea;

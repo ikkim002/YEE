@@ -25,7 +25,9 @@ public class BankAccount {
 		this.name = name;
 		
 class bankAccountTest {
-	public static void main(Strong[])
+	public void main(String []args) {
+		
+	}
 }
 		
 		

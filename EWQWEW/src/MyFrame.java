@@ -3,6 +3,7 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.beans.Statement;
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -12,19 +13,15 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-import com.sun.corba.se.pept.transport.Connection;
-
 class MyFrame extends JFrame {
 	JTextField id, title, p, year, price, author;
 	JButton previousButton, nextButton, InsertButton, deleteButton, searchButton;
 	ResultSet rs;
-	Statement stmt;
+	java.sql.Statement stmt;
 
 	public MyFrame() throws SQLException {
 		super("Database Viewer");
-		Connection con = makeConnection();
-		stmt = con.createStatement();
-		rs = stmt.executeQuery("SELECT * FROM books");
+		rs = ((java.sql.Statement) stmt).executeQuery("SELECT * FROM books");
 		setLayout(new GridLayout(0, 2));
 		add(new JLabel("ID", JLabel.CENTER));
 		add(id = new JTextField());
@@ -93,9 +90,6 @@ class MyFrame extends JFrame {
 		}
 		return con;
 	}
-}
-
-class SQLSelectTest {
 	public static void main(String[] args) throws SQLException {
 		new MyFrame();
 	}
